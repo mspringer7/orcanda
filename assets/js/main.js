@@ -1,0 +1,1 @@
+(function(){const t=document.getElementById('theme-toggle'),e=t=>{document.documentElement.setAttribute('data-theme',t),localStorage.setItem('theme',t)};const s=localStorage.getItem('theme');s&&e(s),t&&t.addEventListener('click',()=>{const t=document.documentElement.getAttribute('data-theme')||'dark';e('dark'===t?'light':'dark')})})();
