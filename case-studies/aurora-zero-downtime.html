@@ -38,7 +38,25 @@
     </ul></nav>
   </div>
 </header>
-<main><div class='container'><div class='breadcrumb'><a href='../index.html'>Home</a> › <a href='index.html'>Case Studies</a> › Zero‑Downtime Migration to AWS Aurora MySQL</div><h1 class='h1'>Zero‑Downtime Migration to AWS Aurora MySQL</h1><p class='lede'>Phased migration from self‑managed MySQL to Aurora with automated provisioning and idempotent imports.</p><div class='grid cols-3'><div class='card' style='grid-column:span 2'><h3>Challenge</h3><p>A healthcare platform needed Aurora scalability and resilience but feared downtime during migration.</p><h3>Solution</h3><ul><li>Designed phased migration with read replicas and validation</li><li>Automated schemas/users via Terraform + Parameter Store</li><li>Built reusable IaC modules for network and DB resources</li><li>Parallelized dumps/imports with rollback strategies</li></ul><h3>Impact</h3><ul><li>Near‑zero downtime during cutover</li><li>Simplified environment management across DEV→PROD</li><li>Reduced DB operational overhead by ~40%</li></ul></div><aside class='card'><h3>Stack</h3><ul><li>AWS Aurora MySQL/RDS</li><li>Terraform/Terragrunt</li><li>GitHub Actions</li></ul><img src='../assets/img/clipart/data-migration.svg' alt='Zero‑Downtime Migration to AWS Aurora MySQL illustration' style='width:100%;margin-top:8px;border:1px solid var(--border);border-radius:10px'/><a href='../contact/index.html' class='btn btn-primary' style='margin-top:.6rem'>Discuss a similar project</a></aside></div></div></main>
+<main>
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">Case Studies</a> › Zero‑Downtime Migration to AWS Aurora MySQL</div>
+      <h1 class="h1">Zero‑Downtime Migration to AWS Aurora MySQL</h1>
+      <p class="lede">Phased migration from self‑managed MySQL to Aurora with automated provisioning and idempotent imports.</p>
+      <div class="grid cols-3">
+        <div class="card" style="grid-column:span 2">
+          <h3>Challenge</h3><p>A healthcare platform needed Aurora scalability and resilience but feared downtime during migration.</p>
+          <h3>Solution</h3><ul><li>Designed phased migration with read replicas and validation</li><li>Automated schemas/users via Terraform + Parameter Store</li><li>Built reusable IaC modules for network and DB resources</li><li>Parallelized dumps/imports with rollback strategies</li></ul>
+          <h3>Impact</h3><ul><li>Near‑zero downtime during cutover</li><li>Simplified environment management across DEV→PROD</li><li>Reduced DB operational overhead by ~40%</li></ul>
+        </div>
+        <aside class="card">
+          <h3>Stack</h3><ul><li>AWS Aurora MySQL/RDS</li><li>Terraform/Terragrunt</li><li>GitHub Actions</li></ul>
+          <img src="https://images.pexels.com/photos/1181645/pexels-photo-1181645.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern server room representing database migration (Pexels)" class="edge"/>
+          <a href="../contact/index.html" class="btn btn-primary" style="margin-top:.6rem">Discuss a similar project</a>
+        </aside>
+      </div>
+    </div>
+    </main>
 <footer class="footer">
   <div class="container grid cols-3">
     <div><strong>Orcanda</strong><p class="tiny">Enterprise-grade CloudOps & Platform Engineering.</p></div>
@@ -48,7 +66,7 @@
       <li><a href="../pricing/index.html">Pricing</a></li>
       <li><a href="../legal/privacy.html">Privacy</a></li>
       <li><a href="../legal/terms.html">Terms</a></li>
-    </ul></div>
+      </ul></div>
     <div><strong>Contact</strong><ul>
       <li>Email: <a href="mailto:sales@orcanda.com">sales@orcanda.com</a></li>
       <li>Calendly: <a href="https://calendly.com/your-calendly/30min" target="_blank" rel="noopener">Book</a></li>
