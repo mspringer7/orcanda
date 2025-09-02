@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FinOps & Reliability • Orcanda</title>
+<title>Case Study: Reliable TLS for a Multi-Cluster Kubernetes Platform • Orcanda</title>
 <meta name="description" content="Enterprise Kubernetes, Terraform, and SRE services."/>
 <link rel="icon" href="../assets/img/favicon-48.png"/>
 <link rel="stylesheet" href="../assets/css/styles.css"/>
@@ -38,18 +38,20 @@
 </header>
 <main>
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">Services</a> › FinOps & Reliability</div>
-      <h1 class="h1">FinOps & Reliability</h1>
-      <p class="lede">Cut cloud bills and raise reliability.</p>
+      <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">Case Studies</a> › Docker Datacenter to EKS Migration</div>
+      <h1 class="h1">Docker Datacenter to EKS Migration</h1>
+      <p class="lede">From on‑prem Docker Datacenter to Amazon EKS with GitOps, IaC, and phased cutover—reducing ops toil while improving reliability.</p>
       <div class="grid cols-3">
         <div class="card" style="grid-column:span 2">
-          <h3>What you get</h3>
-          <ul><li>Cost allocation, showback/chargeback, dashboards</li><li>Right‑sizing, autoscaling, instance/storage optimization</li><li>SLOs, error budgets, incident response & postmortems</li><li>Chaos drills and capacity planning</li><li>Performance engineering and load testing</li></ul>
+          <h3>Challenge</h3><p>A fintech company ran legacy workloads on an on‑prem Docker Datacenter cluster with aging hardware, manual deployments, and limited observability. They needed a secure path to managed Kubernetes on AWS without long downtime.</p>
+          <h3>Solution</h3><ul><li>Designed multi‑account AWS landing zone and network (VPCs, subnets, TGWs, Direct Connect/VPN) via Terraform</li><li>Provisioned EKS clusters with managed node groups and IRSA; standardized cluster add‑ons via Helm umbrellas</li><li>Implemented GitOps (Argo CD) for app/infra delivery; templated Helm charts for 12‑factor services</li><li>Built CI pipelines (GitLab/GitHub Actions) with SBOMs, container signing, and image scans</li><li>Created a phased migration plan with blue/green DNS, data sync jobs, and runbooks for rollback</li><li>Established observability: Prometheus metrics, Loki/CloudWatch logs, Grafana dashboards, SLOs/alerts</li></ul>
+          <h3>Impact</h3><ul><li>Cut deployment time from hours to minutes with repeatable pipelines</li><li>Increased reliability with managed control plane and autoscaling nodes</li><li>Improved security posture (IRSA, least‑privilege IAM, private networking)</li><li>Reduced on‑prem hardware footprint and maintenance costs</li></ul>
         </div>
-        <div class="card">
-          <img src="https://images.pexels.com/photos/1181645/pexels-photo-1181645.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Diverse professionals collaborating" class="edge"/>
-          <a href="../contact/index.html" class="btn btn-primary" style="margin-top:.6rem">Discuss your goals</a>
-        </div>
+        <aside class="card">
+          <h3>Stack</h3><ul><li>AWS EKS, EC2, ECR, Route 53</li><li>Terraform/Terragrunt</li><li>Argo CD, Helm</li><li>GitLab CI or GitHub Actions</li><li>Prometheus, Grafana, CloudWatch</li></ul>
+          <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data center migration concept (Pexels)" class="edge"/>
+          <a href="../contact/index.html" class="btn btn-primary" style="margin-top:.6rem">Discuss a similar project</a>
+        </aside>
       </div>
     </div>
     </main>
